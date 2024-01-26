@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="b9891f0547b7f1107272a3c9316d43e6" sys_domain="global" table="x_1296763_expense_reimbursement_claim" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:36:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d891f0547b7f1107272a3c9316d43e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1296763_expense_reimbursement_claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="Default view">b9891f0547b7f1107272a3c9316d43e6</sys_ui_form>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="Default view">d0f59fcd4777f1107272a3c9316d4365</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:36:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1296763_expense_reimbursement_claim</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:36:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b9891f0547b7f1107272a3c9316d43e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1296763_expense_reimbursement_claim</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+            <sys_update_name>sys_ui_form_sections_b9891f0547b7f1107272a3c9316d43e6</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:36:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

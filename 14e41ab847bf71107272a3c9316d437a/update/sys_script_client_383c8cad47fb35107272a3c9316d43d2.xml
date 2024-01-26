@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Amount should not be zero or negative. </description>
+        <field>amount</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>Amount should not be zero or negative</messages>
+        <name>Amount should be greater than zero</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   
+   g_form.clearMessages();
+   //Type the appropriate comment here, and begin the script below
+   var value = g_form.getValue('amount');
+   if (+value <= 0) {
+      g_form.addErrorMessage('Amount should be greater than 0');
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-17 11:00:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>383c8cad47fb35107272a3c9316d43d2</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Amount should be greater than zero</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sys_script_client_383c8cad47fb35107272a3c9316d43d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-17 11:29:17</sys_updated_on>
+        <table>x_1296763_expense_reimbursement_expense</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

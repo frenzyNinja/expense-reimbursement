@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>info</color>
+        <css/>
+        <glyph>clock-o</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">5b856ff84737b1107272a3c9316d43ed</sp_column>
+        <sp_page display_value="open_claims">a8a9effc4737b1107272a3c9316d4337</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-15 18:50:33</sys_created_on>
+        <sys_id>9a95aff84737b1107272a3c9316d43ef</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Open Claims</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sp_instance_link_9a95aff84737b1107272a3c9316d43ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-18 17:59:34</sys_updated_on>
+        <title>Open Claims</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": "-- None --"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=9a95aff84737b1107272a3c9316d43ef"/>
+</record_update>

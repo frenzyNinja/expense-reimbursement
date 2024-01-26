@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ff4d2b744777b1107272a3c9316d4325</sp_column>
+        <sp_widget display_value="Approval Info">33442352cb30020000f8d856634c9c3f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 04:40:59</sys_created_on>
+        <sys_id>9bbcad0547bfb1107272a3c9316d4379</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sp_instance_9bbcad0547bfb1107272a3c9316d4379</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 11:15:49</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=9bbcad0547bfb1107272a3c9316d4379"/>
+</record_update>

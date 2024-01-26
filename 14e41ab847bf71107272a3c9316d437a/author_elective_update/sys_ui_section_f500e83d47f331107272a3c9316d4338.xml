@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="f500e83d47f331107272a3c9316d4338" sys_domain="global" table="x_1296763_expense_reimbursement_claim" version="3" view="advanced">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approver_comments</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-18 07:01:18</sys_created_on>
+            <sys_id>3d00e83d47f331107272a3c9316d4377</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">f500e83d47f331107272a3c9316d4338</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-18 07:01:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_1296763_expense_reimbursement_claim</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-18 07:01:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f500e83d47f331107272a3c9316d4338</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1296763_expense_reimbursement_claim</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+            <sys_update_name>sys_ui_section_f500e83d47f331107272a3c9316d4338</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-18 07:01:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Advanced" name="advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</application>
+        <file_path/>
+        <instance_id>8ee68991dbaab998ae4c9027c5961965</instance_id>
+        <instance_name>dev212449</instance_name>
+        <name>sys_ui_section_f500e83d47f331107272a3c9316d4338</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="f500e83d47f331107272a3c9316d4338" sys_domain="global" table="x_1296763_expense_reimbursement_claim" version="3" view="advanced"><sys_ui_element action="INSERT_OR_UPDATE"><element>approver_comments</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-18 07:01:18</sys_created_on><sys_id>3d00e83d47f331107272a3c9316d4377</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">f500e83d47f331107272a3c9316d4338</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-18 07:01:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_1296763_expense_reimbursement_claim</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-18 07:01:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f500e83d47f331107272a3c9316d4338</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1296763_expense_reimbursement_claim</sys_name><sys_overrides/><sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package><sys_policy/><sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope><sys_update_name>sys_ui_section_f500e83d47f331107272a3c9316d4338</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-18 07:01:17</sys_updated_on><sys_user/><title>false</title><view display_value="Advanced" name="advanced">7966be310a0a0b8c00bd504090503227</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>684751261</payload_hash>
+        <record_name>Reimbursement Claim</record_name>
+        <reverted_from/>
+        <source>5ce41ab847bf71107272a3c9316d437c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-18 07:01:18</sys_created_on>
+        <sys_id>7900e83d47f331107272a3c9316d4379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d1b5fc6ca0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-18 07:01:18</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>fd00e83d35f33110e505893dde2cd578</update_guid>
+        <update_guid_history>fd00e83d35f33110e505893dde2cd578:684751261</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-18 07:02:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>003cb4e6af384b8480a906d2a3a095e9</sys_id>
+        <sys_metadata>f500e83d47f331107272a3c9316d4338</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_parent display_value="Reimbursement Claim">6be5d70147b7f1107272a3c9316d43de</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_scope_delete display_value="">4780955852644306993acdebcda7e429</sys_scope_delete>
+        <sys_update_name>sys_ui_section_f500e83d47f331107272a3c9316d4338</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_f500e83d47f331107272a3c9316d4338">7900e83d47f331107272a3c9316d4379</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-18 07:02:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

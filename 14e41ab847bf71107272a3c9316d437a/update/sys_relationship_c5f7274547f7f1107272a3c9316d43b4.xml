@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_1296763_expense_reimbursement_claim</basic_apply_to>
+        <basic_query_from>x_1296763_expense_reimbursement_expense</basic_query_from>
+        <insert_callback/>
+        <name>Attachments under the Claim</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+   current.addQuery('claim.number', parent.number);
+   current.addQuery('receipt_status', 'receipt');
+   current.orderBy('number');
+})(current, parent);]]></query_with>
+        <reference_field/>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 13:42:34</sys_created_on>
+        <sys_id>c5f7274547f7f1107272a3c9316d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attachments under the Claim</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sys_relationship_c5f7274547f7f1107272a3c9316d43b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-16 13:42:34</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=c5f7274547f7f1107272a3c9316d43b4"/>
+</record_update>

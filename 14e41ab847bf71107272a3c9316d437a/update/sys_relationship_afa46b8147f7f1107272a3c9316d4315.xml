@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_1296763_expense_reimbursement_claim</basic_apply_to>
+        <basic_query_from>x_1296763_expense_reimbursement_expense</basic_query_from>
+        <insert_callback/>
+        <name>Expenses under the claim</name>
+        <query_from/>
+        <query_with><![CDATA[current.addQuery('claim', parent.sys_id);]]></query_with>
+        <reference_field>claim</reference_field>
+        <related_list/>
+        <simple_reference>true</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 13:28:59</sys_created_on>
+        <sys_id>afa46b8147f7f1107272a3c9316d4315</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Expenses under the claim</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sys_relationship_afa46b8147f7f1107272a3c9316d4315</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 12:50:17</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=afa46b8147f7f1107272a3c9316d4315"/>
+</record_update>

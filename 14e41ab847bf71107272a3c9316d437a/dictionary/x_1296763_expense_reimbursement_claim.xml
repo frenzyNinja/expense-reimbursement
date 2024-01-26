@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6be5d70147b7f1107272a3c9316d43de" label="Reimbursement Claim" max_length="40" name="x_1296763_expense_reimbursement_claim" type="collection">
+        <element label="Activity Comment" max_length="40" name="approver_comments" type="journal_input"/>
+        <element dependent="approver_comments" dependent_on_field="approver_comments" label="Activities" max_length="40" name="approver_comments_list" type="journal_list" use_dependent_field="true"/>
+        <element label="Assigned To" max_length="32" name="assigned_to" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Business Purpose" mandatory="true" max_length="500" name="business_purpose" type="string"/>
+        <element label="Comment" max_length="500" name="comment" type="string"/>
+        <element dependent="company.name" dependent_on_field="company.name" hint="Select Company" label="Company" mandatory="true" max_length="32" name="company" reference="core_company" type="reference" use_dependent_field="true"/>
+        <element choice="3" default="inr" label="Currency" max_length="40" name="currenc0" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="INR" sequence="0" value="inr"/>
+            </choice>
+        </element>
+        <element label="Amount" max_length="38" name="currency" read_only="true" type="currency"/>
+        <element dependent="department.name" dependent_on_field="department.name" label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" type="reference" use_dependent_field="true"/>
+        <element label="Due Date" max_length="40" name="due_date" type="due_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element dependent="policy_type.name" dependent_on_field="policy_type.name" label="Policy Type" mandatory="true" max_length="32" name="policy_type" reference="x_1296763_expense_policy_type" type="reference" use_dependent_field="true"/>
+        <element label="Report Date" max_length="40" name="report_date" type="glide_date"/>
+        <element label="Report Name" mandatory="true" max_length="125" name="report_name" type="string"/>
+        <element choice="3" default="draft" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Open" sequence="1" value="open"/>
+                <element inactive_on_update="false" label="Partially Approved" sequence="2" value="partially_approved"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="approved"/>
+                <element inactive_on_update="false" label="Complete" sequence="4" value="complete"/>
+                <element inactive_on_update="false" label="Rejected" sequence="5" value="rejected"/>
+            </choice>
+        </element>
+        <element default="0" label="Total Amount" max_length="40" name="total_amount" read_only="true" type="decimal"/>
+        <element label="Activities" max_length="40" name="user_comments" type="journal"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="company"/>
+        </index>
+        <index name="index4">
+            <element name="policy_type"/>
+        </index>
+    </element>
+</database>

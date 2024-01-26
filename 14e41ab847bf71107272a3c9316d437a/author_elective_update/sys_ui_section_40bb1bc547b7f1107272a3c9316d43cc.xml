@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Create new Claim" section_id="40bb1bc547b7f1107272a3c9316d43cc" sys_domain="global" table="x_1296763_expense_reimbursement_claim" version="3" view="Advance">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>report_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>d7cbdbc547b7f1107272a3c9316d431a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>dbcbdbc547b7f1107272a3c9316d431a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>report_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>dfcbdbc547b7f1107272a3c9316d431a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>d3cbdbc547b7f1107272a3c9316d431b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>d7cbdbc547b7f1107272a3c9316d431b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>policy_type</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>dbcbdbc547b7f1107272a3c9316d431b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>dfcbdbc547b7f1107272a3c9316d431b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_purpose</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>d3cbdbc547b7f1107272a3c9316d431c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>d7cbdbc547b7f1107272a3c9316d431c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>dbcbdbc547b7f1107272a3c9316d431c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>dfcbdbc547b7f1107272a3c9316d431c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>currency</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>d3cbdbc547b7f1107272a3c9316d431d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>d7cbdbc547b7f1107272a3c9316d431d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>dbcbdbc547b7f1107272a3c9316d431d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>dfcbdbc547b7f1107272a3c9316d431d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comment</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:46:13</sys_created_on>
+            <sys_id>d3cbdbc547b7f1107272a3c9316d431e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:46:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Create new Claim</caption>
+            <header>false</header>
+            <name>x_1296763_expense_reimbursement_claim</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:45:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40bb1bc547b7f1107272a3c9316d43cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1296763_expense_reimbursement_claim</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+            <sys_update_name>sys_ui_section_40bb1bc547b7f1107272a3c9316d43cc</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:45:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Advance" name="Advance">08bb1bc547b7f1107272a3c9316d43c7</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</application>
+        <file_path/>
+        <instance_id>8ee68991dbaab998ae4c9027c5961965</instance_id>
+        <instance_name>dev212449</instance_name>
+        <name>sys_ui_section_40bb1bc547b7f1107272a3c9316d43cc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Create new Claim" section_id="40bb1bc547b7f1107272a3c9316d43cc" sys_domain="global" table="x_1296763_expense_reimbursement_claim" version="3" view="Advance"><sys_ui_element action="INSERT_OR_UPDATE"><element>report_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>d7cbdbc547b7f1107272a3c9316d431a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>dbcbdbc547b7f1107272a3c9316d431a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>report_date</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>dfcbdbc547b7f1107272a3c9316d431a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>d3cbdbc547b7f1107272a3c9316d431b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>d7cbdbc547b7f1107272a3c9316d431b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>policy_type</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>dbcbdbc547b7f1107272a3c9316d431b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>dfcbdbc547b7f1107272a3c9316d431b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>business_purpose</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>d3cbdbc547b7f1107272a3c9316d431c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>d7cbdbc547b7f1107272a3c9316d431c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>dbcbdbc547b7f1107272a3c9316d431c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>company</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>dfcbdbc547b7f1107272a3c9316d431c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>currency</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>d3cbdbc547b7f1107272a3c9316d431d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>d7cbdbc547b7f1107272a3c9316d431d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>department</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>dbcbdbc547b7f1107272a3c9316d431d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>dfcbdbc547b7f1107272a3c9316d431d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>comment</element><position>15</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:46:13</sys_created_on><sys_id>d3cbdbc547b7f1107272a3c9316d431e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Create new Claim" display_value="Create new Claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">40bb1bc547b7f1107272a3c9316d43cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:46:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Create new Claim</caption><header>false</header><name>x_1296763_expense_reimbursement_claim</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-16 12:45:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>40bb1bc547b7f1107272a3c9316d43cc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1296763_expense_reimbursement_claim</sys_name><sys_overrides/><sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package><sys_policy/><sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope><sys_update_name>sys_ui_section_40bb1bc547b7f1107272a3c9316d43cc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-16 12:45:44</sys_updated_on><sys_user/><title>false</title><view display_value="Advance" name="Advance">08bb1bc547b7f1107272a3c9316d43c7</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-515235350</payload_hash>
+        <record_name>Reimbursement Claim</record_name>
+        <reverted_from/>
+        <source>5ce41ab847bf71107272a3c9316d437c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 12:46:14</sys_created_on>
+        <sys_id>53cbdbc547b7f1107272a3c9316d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d124ed9f90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-16 12:46:14</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>d7cbdbc523b7f11065d18beeafe50920</update_guid>
+        <update_guid_history>d7cbdbc523b7f11065d18beeafe50920:-515235350,ccbb1bc5fcb7f1101c255c60915e4fe5:-1025874864</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-19 01:30:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>00f5275f990e424181fcfd62cc7ea5b1</sys_id>
+        <sys_metadata>40bb1bc547b7f1107272a3c9316d43cc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create new Claim</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_parent display_value="Reimbursement Claim">6be5d70147b7f1107272a3c9316d43de</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_scope_delete display_value="">4780955852644306993acdebcda7e429</sys_scope_delete>
+        <sys_update_name>sys_ui_section_40bb1bc547b7f1107272a3c9316d43cc</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_40bb1bc547b7f1107272a3c9316d43cc">53cbdbc547b7f1107272a3c9316d4321</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-19 01:30:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

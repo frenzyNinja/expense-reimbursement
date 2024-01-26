@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1296763_expense.GetUserCompany</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetUserCompany</name>
+        <script><![CDATA[var GetUserCompany = Class.create();
+GetUserCompany.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getCompany: function() {
+      var userRecord = new GlideRecord('sys_user');
+      userRecord.get(this.getParameter('sysparm_userID'));
+      return userRecord.company.getUniqueValue() + ';' + userRecord.company.name;
+   },
+   type: 'GetUserCompany'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-17 12:09:58</sys_created_on>
+        <sys_id>870b1461477f35107272a3c9316d4360</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>GetUserCompany</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sys_script_include_870b1461477f35107272a3c9316d4360</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:26:17</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</application>
+        <file_path/>
+        <instance_id>8ee68991dbaab998ae4c9027c5961965</instance_id>
+        <instance_name>dev212449</instance_name>
+        <name>sys_script_include_870b1461477f35107272a3c9316d4360</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1296763_expense.GetUserCompany&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;GetUserCompany&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var GetUserCompany = Class.create();
+GetUserCompany.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getCompany: function() {
+      var userRecord = new GlideRecord('sys_user');
+      userRecord.get(this.getParameter('sysparm_userID'));
+      return userRecord.company.getUniqueValue() + ';' + userRecord.company.name;
+   },
+   type: 'GetUserCompany'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-17 12:09:58&lt;/sys_created_on&gt;&lt;sys_id&gt;870b1461477f35107272a3c9316d4360&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetUserCompany&lt;/sys_name&gt;&lt;sys_package display_value="Expense Reimbursement" source="x_1296763_expense"&gt;14e41ab847bf71107272a3c9316d437a&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Expense Reimbursement"&gt;14e41ab847bf71107272a3c9316d437a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_870b1461477f35107272a3c9316d4360&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-17 13:26:17&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>854788084</payload_hash>
+        <record_name>GetUserCompany</record_name>
+        <reverted_from/>
+        <source>5ce41ab847bf71107272a3c9316d437c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-17 13:26:17</sys_created_on>
+        <sys_id>378eece547bf35107272a3c9316d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d1799e1730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:26:17</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>bb8eece588bf35109b37e03a49c6539a</update_guid>
+        <update_guid_history>bb8eece588bf35109b37e03a49c6539a:854788084,8c1d64a51dbf35104284c592e70edb9d:-512231165,0675ec6d0b7f3510b64836314eaea89e:-128878126,516e94ed483f35101c84e8c854cc4175:-1552034371,ca1d18e1fb7f351014db7612c1f302ba:-428334980</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 19:41:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0ac891d226084090816207f317309100</sys_id>
+        <sys_metadata>870b1461477f35107272a3c9316d4360</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetUserCompany</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_scope_delete display_value="">4780955852644306993acdebcda7e429</sys_scope_delete>
+        <sys_update_name>sys_script_include_870b1461477f35107272a3c9316d4360</sys_update_name>
+        <sys_update_version display_value="sys_script_include_870b1461477f35107272a3c9316d4360">378eece547bf35107272a3c9316d439b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 19:41:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>report_name</display_field>
+        <field_list/>
+        <filter table="x_1296763_expense_reimbursement_claim">sys_created_by=javascript: gs.getUserName()<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript: gs.getUserName()"/>
+        </filter>
+        <glyph>th-list</glyph>
+        <id/>
+        <maximum_entries>15</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>lg</size>
+        <sp_column display_value="1">e10f2ff44777b1107272a3c9316d4344</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-15 19:31:50</sys_created_on>
+        <sys_id>070fe3f44777b1107272a3c9316d430e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sp_instance_vlist_070fe3f44777b1107272a3c9316d430e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-16 04:34:10</sys_updated_on>
+        <table>x_1296763_expense_reimbursement_claim</table>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "number,total_amount,created_on,comment,status,assigned_to",
+		"displayValue": "number,total_amount,created_on,comment,status,assigned_to"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+    <sys_translated_text action="DELETE" query="documentkey=070fe3f44777b1107272a3c9316d430e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</application>
+        <file_path/>
+        <instance_id>8ee68991dbaab998ae4c9027c5961965</instance_id>
+        <instance_name>dev212449</instance_name>
+        <name>sp_instance_vlist_070fe3f44777b1107272a3c9316d430e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_vlist"&gt;&lt;sp_instance_vlist action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;report_name&lt;/display_field&gt;&lt;field_list/&gt;&lt;filter table="x_1296763_expense_reimbursement_claim"&gt;sys_created_by=javascript: gs.getUserName()&lt;item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript: gs.getUserName()"/&gt;&lt;/filter&gt;&lt;glyph&gt;th-list&lt;/glyph&gt;&lt;id/&gt;&lt;maximum_entries&gt;15&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;lg&lt;/size&gt;&lt;sp_column display_value="1"&gt;e10f2ff44777b1107272a3c9316d4344&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Simple List"&gt;5b255672cb03020000f8d856634c9c28&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_vlist&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-15 19:31:50&lt;/sys_created_on&gt;&lt;sys_id&gt;070fe3f44777b1107272a3c9316d430e&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Expense Reimbursement" source="x_1296763_expense"&gt;14e41ab847bf71107272a3c9316d437a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Expense Reimbursement"&gt;14e41ab847bf71107272a3c9316d437a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_vlist_070fe3f44777b1107272a3c9316d430e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-16 04:34:10&lt;/sys_updated_on&gt;&lt;table&gt;x_1296763_expense_reimbursement_claim&lt;/table&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "number,total_amount,created_on,comment,status,assigned_to",
+		"displayValue": "number,total_amount,created_on,comment,status,assigned_to"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_vlist&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=070fe3f44777b1107272a3c9316d430e"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-834331726</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5ce41ab847bf71107272a3c9316d437c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 04:34:10</sys_created_on>
+        <sys_id>972b298147bfb1107272a3c9316d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d108c5c010000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-16 04:34:10</sys_updated_on>
+        <type>Instance of Simple List</type>
+        <update_guid>9f2b298117bfb1106ffd1a14d578c0c9</update_guid>
+        <update_guid_history>9f2b298117bfb1106ffd1a14d578c0c9:-834331726,dafa29815ebfb1105bf01c6d65f5cb1c:903413716,38da2d415cbfb11054695ed85e6eb379:604373507,1120f3789877b11050a17ee9a6297fb0:471540446,61cfab388077b11068462e87a5e2f262:-2061344702,aaafa7386977b11015fb640470d73b8c:2117852829,af4faff46b77b110ec3495a470408101:696117341,9f0fe3f46277b110a50fb56ea599730f:424494478</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">dc94db8d4777f1107272a3c9316d4361</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 12:14:37</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_vlist">sp_instance_vlist</sys_db_object>
+        <sys_id>30b6049f10584f90a49044157f67b100</sys_id>
+        <sys_metadata>070fe3f44777b1107272a3c9316d430e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_scope_delete display_value="">4780955852644306993acdebcda7e429</sys_scope_delete>
+        <sys_update_name>sp_instance_vlist_070fe3f44777b1107272a3c9316d430e</sys_update_name>
+        <sys_update_version display_value="sp_instance_vlist_070fe3f44777b1107272a3c9316d430e">972b298147bfb1107272a3c9316d43ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-16 12:14:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

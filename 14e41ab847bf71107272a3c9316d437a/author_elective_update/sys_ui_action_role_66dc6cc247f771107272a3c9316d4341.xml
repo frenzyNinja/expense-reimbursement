@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="DELETE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-19 03:44:49</sys_created_on>
+        <sys_id>66dc6cc247f771107272a3c9316d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Claim.user</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_ui_action display_value="Open Claim">9b3928ce47b771107272a3c9316d432f</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_66dc6cc247f771107272a3c9316d4341</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-19 03:44:49</sys_updated_on>
+        <sys_user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</sys_user_role>
+    </sys_ui_action_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</application>
+        <file_path/>
+        <instance_id>8ee68991dbaab998ae4c9027c5961965</instance_id>
+        <instance_name>dev212449</instance_name>
+        <name>sys_ui_action_role_66dc6cc247f771107272a3c9316d4341</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-19 03:44:49</sys_created_on><sys_id>66dc6cc247f771107272a3c9316d4341</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Open Claim.user</sys_name><sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package><sys_policy/><sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope><sys_ui_action display_value="Open Claim">9b3928ce47b771107272a3c9316d432f</sys_ui_action><sys_update_name>sys_ui_action_role_66dc6cc247f771107272a3c9316d4341</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-19 03:44:49</sys_updated_on><sys_user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+        <payload_hash>946253966</payload_hash>
+        <record_name>Open Claim.user</record_name>
+        <reverted_from/>
+        <source>5ce41ab847bf71107272a3c9316d437c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-19 03:44:49</sys_created_on>
+        <sys_id>a9acb846473b71107272a3c9316d43ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d1fd241dd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-19 03:44:49</sys_updated_on>
+        <type>UI Action Role</type>
+        <update_guid>6dacb846283b711002fd976be07232ee</update_guid>
+        <update_guid_history>6dacb846283b711002fd976be07232ee:946253966</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 07:15:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action_role">sys_ui_action_role</sys_db_object>
+        <sys_id>527eb09959e248d4ac1aedf197e90f04</sys_id>
+        <sys_metadata>66dc6cc247f771107272a3c9316d4341</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Claim.user</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_scope_delete display_value="">4780955852644306993acdebcda7e429</sys_scope_delete>
+        <sys_update_name>sys_ui_action_role_66dc6cc247f771107272a3c9316d4341</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_role_66dc6cc247f771107272a3c9316d4341">a9acb846473b71107272a3c9316d43ef</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-23 07:15:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

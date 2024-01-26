@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $document, spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	c.data.step = 0;
+	c.claimData = {};
+	
+	c.expenses = [];
+	c.expense = {};
+	
+	c.$onInit = initialiseClaimValues.bind(c);
+	
+	c.submitClaim = function() {
+		var claimData = c.claimData;
+		var dpTextField = $document.find('#datepicker1value');
+		claimData.reportDate = dpTextField.val();
+		
+		if (!c.validateClaim()) {
+			return;
+		}
+		
+		c.server.get({action: 'createClaim', claim: claimData}).then(function(r) {
+			spUtil.addInfoMessage("Claim has been created.");
+			c.claimData.sys_id = r.data.claim_id;
+			c.data.step = 1;
+		});
+	}
+	
+	c.submitExpense = function() {
+		var expense = c.expense;
+		var dpTextField = $document.find('#datepicker2value');
+		expense.transactionDate = dpTextField.val();
+		
+		// validate expense data
+		if (!expense.expenseType) {
+			spUtil.addErrorMessage("Expense Type cannot be empty.");
+			return;
+		}
+		
+		if (!expense.receiptStatus) {
+			spUtil.addErrorMessage("Receipt Status cannot be empty.");
+			return;
+		}
+		
+		if (!expense.paymentType) {
+			spUtil.addErrorMessage("Payment Type cannot be empty.");
+			return;
+		}
+		
+		if (!expense.amount || expense.amount <= 0) {
+			spUtil.addErrorMessage("Amount should be greater than zero.");
+			return;
+		}
+		
+		// add the expense data to expenses 
+		expense.claim = c.claimData.sys_id;
+		c.server.get({action: 'addExpense', expense: expense}).then(function(r) {
+			spUtil.addInfoMessage("Expense added to the claim");
+			expense.sys_id = r.data.expense_id;
+			console.log(expense);
+			// Add to the list
+			c.expenses.push(Object.assign({}, expense));
+			
+			// set fields empty
+			expense = {};
+			$document.find("#datepicker2value").val("");
+			$document.find("#exp_amount").val("");
+		});
+	}
+	
+	c.proceedToReview = function() {
+		if (c.expenses.length == 0) {
+			spUtil.addErrorMessage("Please add a claim to proceed");
+			return;
+		}
+		
+		c.data.step = 2;
+	}
+	
+	c.validateClaim = function() {
+		var claimData = c.claimData;
+		if (!claimData.reportName) {
+			spUtil.addErrorMessage("Report name cannot be empty.");
+			return false;
+		}
+		
+		if (!claimData.reportDate) {
+		  spUtil.addErrorMessage("Report Date cannot be empty.");
+			return false;
+		}
+		
+		if (!claimData.policy) {
+		  spUtil.addErrorMessage("Enter valid policy type");
+			return false;
+		}
+		
+		if (!claimData.businessPurpose || claimData.businessPurpose.length > 500) {
+			spUtil.addErrorMessage("Business Purpose cannot be empty. and should be within 500 Characters");
+			return false;
+		}
+		
+		if (!claimData.company || !claimData.department) {
+			spUtil.addErrorMessage("Please enter valid company and or department");
+			return false;
+		}
+		
+		return true;
+	}
+	
+	c.mapPaymentType = function(id) {
+		c.data.paymentTypes.forEach(function(type) {
+			if (type.sys_id == id) return type.name;
+		});
+		
+		return id;
+	}
+	
+	c.mapReceiptStatus = function(id) {
+		c.data.receiptStatus.forEach(function(type) {
+			if (type.value == id) return type.name;
+		});
+		
+		return id;
+	}
+	
+	c.mapExpenseType = function(id) {
+		c.data.expenseTypes.forEach(function(type) {
+			if (type.sys_id == id) 
+			{
+				console.log("Expense type match: ", type);
+				return type.name;
+			}
+		});
+		
+		return id;
+	}
+};
+
+function initialiseClaimValues() {
+	var self = this;
+	self.server.get({ action: 'getPolicies'}).then(function(r) {
+			self.data.policies = r.data.policies;
+	});	
+	
+	self.server.get({ action: 'getCompanies'}).then(function(r) {
+			self.data.companies = r.data.companies;
+	});
+		
+	self.server.get({ action: 'getDepartments'}).then(function(r) {
+			self.data.departments = r.data.departments;
+	});
+	
+	self.server.get({ action: 'getExpenseType'}).then(function(r) {
+		self.data.expenseTypes = r.data.expenseTypes;
+	});
+	
+	self.data.receiptStatus = [
+		{name: 'Receipt', value:'receipt'}, 
+		{name: 'No Receipt', value: 'no_receipt'}];
+	
+	self.server.get({ action: 'getPaymentType'}).then(function(r) {
+		self.data.paymentTypes = r.data.paymentTypes;
+		console.log(self.data.paymentTypes);
+	});
+}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@import "compass";
+
+// Stepper
+.stepper {
+    .nav-tabs {
+        position: relative;
+    }
+    .nav-tabs &gt; li {
+        width: 25%;
+        position: relative;
+        &amp;:after {
+            content: '';
+            position: absolute;
+            background: #f1f1f1;
+            display: block;
+            width: 100%;
+            height: 5px;
+            top: 30px;
+            left: 50%;
+            z-index: 1;
+        }
+        &amp;.completed {
+            &amp;::after {
+                background: #34bc9b;
+            }
+        }
+        &amp;:last-child {
+            &amp;::after {
+                background: transparent;
+            }
+        }
+        &amp;.active:last-child {
+            .round-tab {
+                background: #34bc9b;
+                &amp;::after {
+                    content: '✔';
+                    color: #fff;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    top: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+    .nav-tabs [data-toggle='tab'] {
+        width: 25px;
+        height: 25px;
+        margin: 20px auto;
+        border-radius: 100%;
+        border: none;
+        padding: 0;
+        color: #f1f1f1;
+    }
+    .nav-tabs [data-toggle='tab']:hover {
+        background: transparent;
+        border: none;
+    }
+    .nav-tabs &gt; .active &gt; [data-toggle='tab'], .nav-tabs &gt; .active &gt; [data-toggle='tab']:hover, .nav-tabs &gt; .active &gt; [data-toggle='tab']:focus {
+        color: #34bc9b;
+        cursor: default;
+        border: none;
+    }
+    .tab-pane {
+        position: relative;
+        padding-top: 50px;
+    }
+    .round-tab {
+        width: 25px;
+        height: 25px;
+        line-height: 22px;
+        display: inline-block;
+        border-radius: 25px;
+        background: #fff;
+        border: 2px solid #34bc9b;
+        color: #34bc9b;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        font-size: 14px;
+        
+    }
+    .completed .round-tab{
+    	background: #34bc9b;
+    	&amp;::after {
+    		content: '✔';
+    		color: #fff;
+    		position: absolute;
+    		left: 0;
+    		right: 0;
+    		margin: 0 auto;
+    		top: 0;
+    		display: block;
+        }
+    }
+    .active .round-tab {
+        background: #fff;
+        border: 2px solid #34bc9b;
+        &amp;:hover {
+            background: #fff;
+            border: 2px solid #34bc9b;
+        }
+        &amp;::after {
+            display: none;
+        }
+    }
+    .disabled .round-tab {
+        background: #fff;
+        color: #f1f1f1;
+        border-color: #f1f1f1;
+        &amp;:hover {
+            color: #4dd3b6;
+            border: 2px solid #a6dfd3;
+        }
+        &amp;::after {
+            display: none;
+        }
+    }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>claim_form</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  'use strict';
+
+  $(function() {
+    $(document).ready(function() {
+			setupForm();
+      
+			$('#datetimepicker1').datetimepicker({ 
+					format: 'YYYY-MM-DD',
+			});
+			$('#datetimepicker2').datetimepicker({ 
+					format: 'YYYY-MM-DD',
+			});
+    });
+		
+		function setupForm() {
+			function triggerClick(elem) {
+        $(elem).click();
+      }
+			/*
+      var $progressWizard = $('.stepper'),
+        $tab_active,
+        $tab_prev,
+        $tab_next,
+        $btn_prev = $progressWizard.find('.prev-step'),
+        $btn_next = $progressWizard.find('.next-step'),
+        $tab_toggle = $progressWizard.find('[data-toggle="tab"]'),
+        $tooltips = $progressWizard.find('[data-toggle="tab"][title]');
+
+       //Initialize tooltips
+       $tooltips.tooltip();
+
+       //Wizard
+       $tab_toggle.on('show.bs.tab', function(e) {
+        var $target = $(e.target);
+
+        if (!$target.parent().hasClass('active, disabled')) {
+          $target.parent().prev().addClass('completed');
+        }
+        if ($target.parent().hasClass('disabled')) {
+          return false;
+        }
+      });
+
+      $btn_next.on('click', function() {
+        $tab_active = $progressWizard.find('.active');
+
+        $tab_active.next().removeClass('disabled');
+
+        $tab_next = $tab_active.next().find('a[data-toggle="tab"]');
+        triggerClick($tab_next);
+
+      });
+			
+      $btn_prev.click(function() {
+        $tab_active = $progressWizard.find('.active');
+        $tab_prev = $tab_active.prev().find('a[data-toggle="tab"]');
+        triggerClick($tab_prev);
+      });
+			*/
+		}
+  });
+}]]></link>
+        <name>Claim Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  populatePolicies();
+	populateCompanies();
+	populateDepartments();
+	populateExpenseTypes();
+	populatePaymentType();
+	
+	createClaimAPI();
+	createExpenseAPI();
+	
+	
+})();
+
+function populatePolicies() {
+	if (input && input.action == "getPolicies") {
+		var policies = new GlideRecord("x_1296763_expense_policy_type");
+		policies.query();
+		
+		data.policies = [];
+		
+		while (policies.next()) {
+			var d = {};
+			$sp.getRecordDisplayValues(d, policies, "name, sys_id");
+			data.policies.push(d);
+		}
+	}
+}
+
+function populateCompanies() {
+	if (input && input.action == "getCompanies") {
+		var companies = new GlideRecord("core_company");
+		companies.query('sys_id', gs.getUser().company);
+		
+		data.companies = [];
+		
+		while (companies.next()) {
+			var t = {};
+			$sp.getRecordDisplayValues(t, companies, "name, sys_id");
+			data.companies.push(t);
+		}
+	}
+}
+
+function populateDepartments() {
+	if (input && input.action == "getDepartments") {
+		var departments = new GlideRecord("cmn_department");
+		departments.query('sys_id', gs.getUser().department);
+		
+		data.departments = [];
+		
+		while (departments.next()) {
+			var t = {};
+			$sp.getRecordDisplayValues(t, departments, "name, sys_id");
+			data.departments.push(t);
+		}
+	}
+}
+
+function createClaimAPI() {
+	if (input && input.action == 'createClaim') {
+		var c = input.claim;
+		
+		var gr = new GlideRecord('x_1296763_expense_reimbursement_claim');
+		gr.initialize();
+		gr.report_name = c.reportName;
+		gr.report_date = c.reportDate;
+		gr.business_purpose = c.businessPurpose;
+		gr.comment = c.comments;
+		gr.company = c.company;
+		gr.department = c.department;
+		gr.policy_type = c.policy;
+		//gr.status = 'draft'; // By default it is draft status
+		
+		data.claim_id = gr.insert();
+	}
+}
+
+function createExpenseAPI() {
+	if (input && input.action == 'addExpense') {
+		var e = input.expense;
+		
+		var gr = new GlideRecord("x_1296763_expense_reimbursement_expense");
+		gr.claim = e.claim;
+		gr.comment = e.comment;
+		gr.amount = e.amount;
+		gr.receipt_status = e.receiptStatus;
+		gr.expense_type = e.expenseType;
+		gr.vendor_name = e.vendorName;
+		gr.receipt = e.receipt;
+		gr.transaction_date = e.transactionDate;
+		
+		data.expense_id = gr.insert();
+	}
+}
+
+function populateExpenseTypes() {
+	if (input && input.action == "getExpenseType") {
+		var q = new GlideRecord("x_1296763_expense_expense_type");
+		q.query();
+		
+		data.expenseTypes = [];
+		
+		while (q.next()) {
+			var t = {};
+			$sp.getRecordDisplayValues(t, q, "name, sys_id");
+			data.expenseTypes.push(t);
+		}
+	}
+}
+
+function populatePaymentType() {
+	if (input && input.action == "getPaymentType") {
+		var q = new GlideRecord("x_1296763_expense_payment_type");
+		q.query();
+		
+		data.paymentTypes = [];
+		
+		while (q.next()) {
+			var t = {};
+			$sp.getRecordDisplayValues(t, q, "name, sys_id");
+			data.paymentTypes.push(t);
+		}
+	}
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-19 07:22:09</sys_created_on>
+        <sys_id>096ead8a47fb71107272a3c9316d4360</sys_id>
+        <sys_mod_count>235</sys_mod_count>
+        <sys_name>Claim Form</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sp_widget_096ead8a47fb71107272a3c9316d4360</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 13:46:13</sys_updated_on>
+        <template><![CDATA[<div>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">     
+      <div class="stepper">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" ng-class="(c.data.step == 0) ? 'active': 'disabled'">
+            <a class="persistant-disabled" href="#stepper-step-1" data-toggle="tab" aria-controls="stepper-step-1" role="tab" title="Step 1" disabled>
+              <span class="round-tab">1</span>
+            </a>
+          </li>
+          <li role="presentation" ng-class="(c.data.step == 1) ? 'active': 'disabled'">
+            <a class="persistant-disabled" href="#stepper-step-2" data-toggle="tab" aria-controls="stepper-step-2" role="tab" title="Step 2" disabled>
+              <span class="round-tab">2</span>
+            </a>
+          </li>
+          <li role="presentation" ng-class="(c.data.step == 2) ? 'active': 'disabled'">
+            <a class="persistant-disabled" href="#stepper-step-3" data-toggle="tab" aria-controls="stepper-step-3" role="tab" title="Step 3" disabled>
+              <span class="round-tab">3</span>
+            </a>
+          </li>
+          <li role="presentation" ng-class="(c.data.step == 3) ? 'active': 'disabled'">
+            <a class="persistant-disabled" href="#stepper-step-4" data-toggle="tab" aria-controls="stepper-step-4" role="tab" title="Complete" disabled>
+              <span class="round-tab">4</span>
+            </a>
+          </li>
+        </ul>
+        
+        <!-- This is the actual body content -->
+        <div role="form">
+          <div class="tab-content">
+            <!--- TAB1 --->
+            <form novalidate class="tab-pane fade in" ng-class="(c.data.step == 0) ? 'active': ''" role="form" id="stepper-step-1" name="claimForm">
+              <h3 class "h2">Start a claim</h3>
+              <div class="well well-lg form-horizontal">
+                <div class="form-group">
+                  <label class="form-label"> Report Name * </label>
+                  <input type="text" name="reportName" ng-model="c.claimData.reportName" class="form-control" placeholder="Enter report name" required/>
+               </div>
+                <div class="form-group">
+                  <label for="datepicker1value" class="form-label"> Report Date * </label>
+                  <div class="container">
+                     <div class="row">
+                        <div class='col-sm-6'>
+                           <div class="form-group">
+                              <div class='input-group date' id='datetimepicker1'>
+                                 <input type='text' id='datepicker1value' class="form-control"/>
+                                 <span class="input-group-addon">
+                                   <span class="glyphicon glyphicon-time"></span>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+                <div class="form-group">
+                  <label for="policy_type" class="form-label"> Policy * </label>
+                  <select id="policy_type" ng-model="c.claimData.policy" class="form-control">
+                    <option ng-repeat="type in data.policies track by type.sys_id" value="{{type.sys_id}}">{{ type.name }}</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label for="business_purpose" class="form-label" > Business Purpose * </label>
+                  <textarea id="business_purpose" ng-model="c.claimData.businessPurpose" class="form-control" placeholder="Enter business purpose" required></textarea>
+               </div>
+               <div class="form-group">
+                 <label for="company_name" class="form-label"> Company *</label>
+                 <select id="company_name" class="form-control" ng-model="c.claimData.company">
+                    <option ng-repeat="type in data.companies track by type.sys_id" value="{{type.sys_id}}">{{ type.name }}</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                 <label for="dept_name" class="form-label"> Department *</label>
+                 <select id="dept_name" class="form-control" ng-model="c.claimData.department" >
+                    <option ng-repeat="type in data.departments track by type.sys_id" value="{{type.sys_id}}">{{ type.name }}</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                 <label for="comments" class="form-label"> Comments </label>
+                 <textarea id="comments" placeholder="Enter comments" class="form-control" ng-model="c.claimData.comments" ></textarea>
+               </div>
+              </div>
+              <ul class="list-inline pull-right">
+                <li>
+                  <a class="btn btn-primary next-step" ng-click="c.submitClaim()">Next</a>
+                </li>
+              </ul>
+            </form>
+            
+            <!-- TAB2 Expense----->
+            <form class="tab-pane fade in" ng-class="(c.data.step == 1) ? 'active': ''" role="form" id="stepper-step-2">
+              <h3 class="h2">Add expense</h3>
+              <p>
+                Claim: {{ c.claimData.reportName }}
+              </p>
+              <span class="label label-success" ng-if="c.expenses.length > 0">{{ c.expenses.length }} Expenses added. </span>
+          
+              <p>
+              	<div class="form-group">
+                  <label class="form-label" for="expense_type"> Expense Type * </label>
+                   <select id="expense_type" ng-model="c.expense.expenseType" class="form-control" required>
+                    <option ng-repeat="type in data.expenseTypes track by type.sys_id" value="{{type.sys_id}}">{{ type.name }}</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label class="form-label" for="receipt_status"> Receipt Status * </label>
+                   <select id="receipt_status" ng-model="c.expense.receiptStatus" class="form-control" required>
+                    <option ng-repeat="type in data.receiptStatus track by type.value" value="{{type.value}}">{{ type.name }}</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label class="form-label" for="payment_type"> Payment Type * </label>
+                  <select id="payment_type" ng-model="c.expense.paymentType" class="form-control" required>
+                    <option ng-repeat="type in data.paymentTypes track by type.sys_id" value="{{type.sys_id}}">{{ type.name }}</option>
+                  </select>
+                 <!-- 
+                   <select id="payment_type" ng-model="c.expense.paymentType" class="form-control" 
+                                 ng-options="type.sys_id as type.name for type in data.paymentTypes">
+                   </select>
+							-->
+               </div>
+               <div class="form-group">
+                  <label class="form-label" for="amount"> Amount * </label>
+                  <input id="amount" type="number" name="amount" ng-model="c.expense.amount" class="form-control" placeholder="0" required/>
+               </div>
+               <div class="form-group">
+                  <label class="form-label"> Transaction Date </label>
+                  <div class="container">
+                     <div class="row">
+                        <div class='col-sm-6'>
+                           <div class="form-group">
+                              <div class='input-group date' id='datetimepicker2'>
+                                 <input type='text' id='datepicker2value' class="form-control"/>
+                                 <span class="input-group-addon">
+                                   <span class="glyphicon glyphicon-time"></span>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+              <div class="form-group">
+                  <label class="form-label" for="exp_comment"> Comment </label>
+                  <textarea id="exp_comment" name="expense_comment" ng-model="c.expense.comment" class="form-control" placeholder="Enter comments" required/>
+               </div>
+              </p>
+              <p>
+                <ul class="list-inline">
+                    <li> <a class="btn btn-primary next-step" ng-click="c.submitExpense()">Add Expense</a></li>
+                   <li> <a class="btn btn-primary next-step" ng-click="c.proceedToReview()">Finish</a></li>
+                </ul>
+              </p>
+         
+          <!--
+          <div class="panel panel-default" ng-if="c.expenses.length > 0">
+              <table class="table table-striped">
+                <tr>
+                  <th>Expense Type</th>
+                  <th>Receipt Status</th>
+                  <th>Payment Type</th>
+                  <th>Amount</th>
+                  <th>Transaction Date</th>
+                  <th>Comment</th>
+                </tr>
+                <tr ng-repeat="e in c.expenses">
+                  <td>{{ c.mapExpenseType(e.expenseType) }}</td>
+                  <td>{{ c.mapReceiptStatus(e.receiptStatus) }}</td>
+                  <td>{{ c.mapPaymentType(e.paymentType) }}</td>
+                  <td>{{ e.amount }}</td>
+                  <td>{{ e.transactionDate }}</td>
+                  <td>{{ e.comment }}</td>
+                </tr>
+              </table>
+            </div> 
+					-->
+            </form>
+            
+            
+            <!-- TAB3 Review----->
+            <form class="tab-pane fade in" ng-class="(c.data.step == 2) ? 'active': ''" role="tabpanel" id="stepper-step-3">
+              <h3 class="hs">3. Review and Submit Payment</h3>
+              
+              
+              
+            </form>
+            
+            <!-- TAB4 Submit----->
+            <form class="tab-pane fade in" ng-class="(c.data.step == 3) ? 'active': ''" role="tabpanel" id="stepper-step-4">
+              <h3>4. All done!</h3>
+              <p>You have successfully completed all steps.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

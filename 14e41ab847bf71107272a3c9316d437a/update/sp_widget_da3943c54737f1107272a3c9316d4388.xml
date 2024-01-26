@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[(function() {	
+	var c = this;		
+ 
+	
+})();]]></client_script>
+        <controller_as>c</controller_as>
+        <css>h1 {
+color: #8bdb2e;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>my_hello_world_1</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>My Hello World 1</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.claims = [];
+	
+	var gr = new GlideRecord('x_1296763_expense_reimbursement_claim');
+	gr.addQuery('sys_created_by', gs.getUserName());
+	gr.query();
+	
+	
+	while(gr.next()) {
+		var claimData = {};
+		claimData.number = gr.getValue('number');
+		claimData.totalAmount = gr.getValue('total_amount');
+		claimData.reportName = gr.getValue('report_name');
+		claimData.policy = gr.getValue('policy_type');
+		claimData.currency = gr.getValue('currency');
+		
+		findExpenses(claimData);
+
+		data.claims.push(claimData);
+	}
+	
+	function findExpenses(claimData) {	
+		var expenseQuery = new GlideRecord('x_1296763_expense_reimbursement_expense');
+		expenseQuery.addQuery('claim.number', claimData.number);
+		expenseQuery.query();
+		
+		var expenses = [];
+		
+		while (expenseQuery.next()) {
+			var expense = {};
+			expense.number = expenseQuery.getValue('number');
+			expense.amount = expenseQuery.getValue('amount');
+			expense.paymentType = expenseQuery.getValue('payment_type');
+			expense.currency = expenseQuery.getValue('currency');
+			expense.vendorName = expenseQuery.getValue('vendor_name');
+			 gs.addInfoMessage(expense.number);
+			expenses.push(expense);
+		}
+		
+		claimData.expenses = expenses;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 11:25:03</sys_created_on>
+        <sys_id>da3943c54737f1107272a3c9316d4388</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>My Hello World 1</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sp_widget_da3943c54737f1107272a3c9316d4388</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-18 18:33:22</sys_updated_on>
+        <template><![CDATA[<div>
+  <table class='table table-hover'>
+    <tr>
+      <th>Number</th>
+      <th>Report Name</th>
+    	<th>Policy</th>
+      <th>Total Amount</th>
+    </tr>
+    
+    <tr ng-repeat="claimData in data.claims" ng-click="expenses = claimData.expenses" ng-init="expenses= null">
+    	<td>{{ claimData.number }}</td>
+      <td>{{ claimData.reportName }}</td>
+      <td>{{ claimData.policy }}</td>
+      <td>{{ claimData.currency }} {{ claimData.totalAmount }}</td>
+    </tr>
+  </table>
+  
+  <div class='expense-record' ng-if='expenses'>
+   	<table>
+			<tr>
+        <th>Number</th>
+        <th>Amount</th>
+        <th>Payment Type</th>
+        <th>Vendor Name</th>
+      </tr>
+      
+      <tr ng-repeat='expense in '></tr>
+    </table>    
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

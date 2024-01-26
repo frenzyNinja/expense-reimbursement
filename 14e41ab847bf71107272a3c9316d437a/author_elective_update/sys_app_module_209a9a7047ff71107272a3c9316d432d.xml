@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Expense Reimbursement">e09ada3047ff71107272a3c9316d4325</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>NEW</link_type>
+        <map_page/>
+        <mobile_title>Create New</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1296763_expense_reimbursement_expense</name>
+        <order>17</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-15 13:22:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>209a9a7047ff71107272a3c9316d432d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Add new expense</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sys_app_module_209a9a7047ff71107272a3c9316d432d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 07:24:52</sys_updated_on>
+        <timeline_page/>
+        <title>Add new expense</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</application>
+        <file_path/>
+        <instance_id>8ee68991dbaab998ae4c9027c5961965</instance_id>
+        <instance_name>dev212449</instance_name>
+        <name>sys_app_module_209a9a7047ff71107272a3c9316d432d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Expense Reimbursement">e09ada3047ff71107272a3c9316d4325</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>NEW</link_type><map_page/><mobile_title>Create New</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1296763_expense_reimbursement_expense</name><order>17</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-15 13:22:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>209a9a7047ff71107272a3c9316d432d</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Add new expense</sys_name><sys_overrides/><sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package><sys_policy/><sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope><sys_update_name>sys_app_module_209a9a7047ff71107272a3c9316d432d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-22 07:24:52</sys_updated_on><timeline_page/><title>Add new expense</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>926047587</payload_hash>
+        <record_name>Add new expense</record_name>
+        <reverted_from/>
+        <source>5ce41ab847bf71107272a3c9316d437c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 07:24:52</sys_created_on>
+        <sys_id>1acb89cf47f331107272a3c9316d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d300eca9d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 07:24:52</sys_updated_on>
+        <type>Module</type>
+        <update_guid>1ecb89cfacf331109b35bf0c71a6890c</update_guid>
+        <update_guid_history>1ecb89cfacf331109b35bf0c71a6890c:926047587,8fa7d44a407771105617758663d845bf:274745479,91eaf32d303331102273de34b237a414:926047587,635020e5087f3510587f9f72da704ed6:274745479,e09a9a708dff71108cfe93e87cf0602e:-492334969</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Add new expense">b341ddc7473731107272a3c9316d4369</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 07:49:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2b39320e53d44a589108481e0bd46440</sys_id>
+        <sys_metadata>209a9a7047ff71107272a3c9316d432d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add new expense</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_scope_delete display_value="">4780955852644306993acdebcda7e429</sys_scope_delete>
+        <sys_update_name>sys_app_module_209a9a7047ff71107272a3c9316d432d</sys_update_name>
+        <sys_update_version display_value="sys_app_module_209a9a7047ff71107272a3c9316d432d">1acb89cf47f331107272a3c9316d430d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 07:49:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-15 13:20:43</sys_created_on>
+        <sys_id>321ade3047ff71107272a3c9316d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1296763_expense_expense_type.approval_admin</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_security_acl display_value="x_1296763_expense_expense_type">361ade3047ff71107272a3c9316d43b8</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_321ade3047ff71107272a3c9316d43bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-15 13:20:43</sys_updated_on>
+        <sys_user_role display_value="approval_admin" name="approval_admin">85805422c61122890157c76a4036958b</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</application>
+        <file_path/>
+        <instance_id>8ee68991dbaab998ae4c9027c5961965</instance_id>
+        <instance_name>dev212449</instance_name>
+        <name>sys_security_acl_role_321ade3047ff71107272a3c9316d43bb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-15 13:20:43</sys_created_on><sys_id>321ade3047ff71107272a3c9316d43bb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1296763_expense_expense_type.approval_admin</sys_name><sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package><sys_policy/><sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope><sys_security_acl display_value="x_1296763_expense_expense_type">361ade3047ff71107272a3c9316d43b8</sys_security_acl><sys_update_name>sys_security_acl_role_321ade3047ff71107272a3c9316d43bb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-15 13:20:43</sys_updated_on><sys_user_role display_value="approval_admin" name="approval_admin">85805422c61122890157c76a4036958b</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>749410119</payload_hash>
+        <record_name>x_1296763_expense_expense_type.approval_admin</record_name>
+        <reverted_from/>
+        <source>5ce41ab847bf71107272a3c9316d437c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-15 13:20:43</sys_created_on>
+        <sys_id>7a1ade3047ff71107272a3c9316d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d0d4810de0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-15 13:20:43</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>be1ade3044ff7110945b041ed97013bc</update_guid>
+        <update_guid_history>be1ade3044ff7110945b041ed97013bc:749410119</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1296763_expense_expense_type.approval_admin">b0855886477771107272a3c9316d434b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-19 00:53:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0da1b4e8000c4434996242c552a28490</sys_id>
+        <sys_metadata>321ade3047ff71107272a3c9316d43bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1296763_expense_expense_type.approval_admin</sys_name>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_scope_delete display_value="">4780955852644306993acdebcda7e429</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_321ade3047ff71107272a3c9316d43bb</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_321ade3047ff71107272a3c9316d43bb">7a1ade3047ff71107272a3c9316d43bd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-19 00:53:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

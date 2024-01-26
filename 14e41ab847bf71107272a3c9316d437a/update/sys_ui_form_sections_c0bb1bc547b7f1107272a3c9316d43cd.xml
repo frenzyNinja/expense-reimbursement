@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c0bb1bc547b7f1107272a3c9316d43cd" sys_domain="global" table="x_1296763_expense_reimbursement_claim" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-19 01:30:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b9fd944247b771107272a3c9316d4312</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1296763_expense_reimbursement_claim" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">c0bb1bc547b7f1107272a3c9316d43cd</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1296763_expense_reimbursement_claim" sys_domain="global" view="08bb1bc547b7f1107272a3c9316d43c7">25fd544247b771107272a3c9316d4342</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-19 01:30:46</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1296763_expense_reimbursement_claim</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-16 12:45:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0bb1bc547b7f1107272a3c9316d43cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1296763_expense_reimbursement_claim</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c0bb1bc547b7f1107272a3c9316d43cd</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-16 12:45:44</sys_updated_on>
+            <sys_user/>
+            <view display_value="Advance" name="Advance">08bb1bc547b7f1107272a3c9316d43c7</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

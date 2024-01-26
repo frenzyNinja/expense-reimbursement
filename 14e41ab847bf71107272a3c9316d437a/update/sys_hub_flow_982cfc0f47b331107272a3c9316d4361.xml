@@ -1,0 +1,2766 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=275590000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Assign Partially Approved claims to finance department</description>
+        <internal_name>assign_partially_approved_claims_to_finance_dept</internal_name>
+        <label_cache>[{"name":"{{static.5c3ac8bd477331107272a3c9316d430e}}","label":"Finance Department","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record","label":"1 - Update Record➛Reimbursement Claim Record","reference":"x_1296763_expense_reimbursement_claim","reference_display":"Reimbursement Claim","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Reimbursement Claim Record","reference":"x_1296763_expense_reimbursement_claim","reference_display":"Reimbursement Claim","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.assignment_group","label":"Trigger - Record Updated➛Reimbursement Claim Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"assignment_group"},{"name":"a8b85309-f217-41e0-8df7-3090d886b711.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.sys_updated_on","label":"1 - Update Record➛Reimbursement Claim Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"sys_updated_on"},{"name":"66032e43-94aa-4bee-888e-308f0df8c95c.record.status","label":"5 - Update Record➛Reimbursement Claim Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"status","choices":[{"label":"Draft","used":false,"image":"","rawLabel":"Draft","selected":false,"missing":false,"reference":false,"value":"draft","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Open","used":false,"image":"","rawLabel":"Open","selected":false,"missing":false,"reference":false,"value":"open","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Partially Approved","used":false,"image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"partially_approved","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Approved","used":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"approved","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Complete","used":false,"image":"","rawLabel":"Complete","selected":false,"missing":false,"reference":false,"value":"complete","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Rejected","used":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"rejected","parameters":{"name":"x_1296763_expense_reimbursement_claim"}}]},{"name":"ba82da46-9238-4748-bc4d-4113af619631.record.status","label":"8 - Update Record➛Reimbursement Claim Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"status","choices":[{"label":"Draft","used":false,"image":"","rawLabel":"Draft","selected":false,"missing":false,"reference":false,"value":"draft","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Open","used":false,"image":"","rawLabel":"Open","selected":false,"missing":false,"reference":false,"value":"open","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Partially Approved","used":false,"image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"partially_approved","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Approved","used":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"approved","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Complete","used":false,"image":"","rawLabel":"Complete","selected":false,"missing":false,"reference":false,"value":"complete","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Rejected","used":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"rejected","parameters":{"name":"x_1296763_expense_reimbursement_claim"}}]},{"name":"6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.assignment_group","label":"1 - Update Record➛Reimbursement Claim Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"assignment_group"}]</label_cache>
+        <master_snapshot>732ff04347f331107272a3c9316d4362</master_snapshot>
+        <name>Assign Partially Approved claims to Finance Dept</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>003f344347f331107272a3c9316d430b</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:16:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>982cfc0f47b331107272a3c9316d4361</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Assign Partially Approved claims to Finance Dept</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sys_hub_flow_982cfc0f47b331107272a3c9316d4361</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=982cfc0f47b331107272a3c9316d4361"/>
+    <sys_variable_value action="delete_multiple" query="document_key=982cfc0f47b331107272a3c9316d4361"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1296763_expense_reimbursement_claim">status=partially_approved<item display_value="Partially Approved" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="partially_approved"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>003f344347f331107272a3c9316d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>x_1296763_expense_reimbursement_claim</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>982cfc0f47b331107272a3c9316d4361</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 10:49:43</sys_created_on>
+        <sys_id>4877d148470082107272a3c9316d4387</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <trigger display_value="">003f344347f331107272a3c9316d430b</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=982cfc0f47b331107272a3c9316d4361^sys_idNOT IN4877d148470082107272a3c9316d4387"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=982cfc0f47b331107272a3c9316d4361^sys_idNOT INb56c744f47b331107272a3c9316d43ff"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>b56c744f47b331107272a3c9316d43ff</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b56c744f47b331107272a3c9316d43ff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b56c744f47b331107272a3c9316d43ff</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>b56cb44f47b331107272a3c9316d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <value>status=partially_approved</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b56c744f47b331107272a3c9316d43ff</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>bd6cb44f47b331107272a3c9316d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=b56c744f47b331107272a3c9316d43ff"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=982cfc0f47b331107272a3c9316d4361"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=982cfc0f47b331107272a3c9316d4361^sys_idNOT IN5c2cfc0f47b331107272a3c9316d4363"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>982cfc0f47b331107272a3c9316d4361</id>
+        <name>Assign Partially Approved claims to Finance Dept</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:16:28</sys_created_on>
+        <sys_id>5c2cfc0f47b331107272a3c9316d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:16:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5c2cfc0f47b331107272a3c9316d4363"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=982cfc0f47b331107272a3c9316d4361^sys_idNOT IN296c744f47b331107272a3c9316d43fa,616c744f47b331107272a3c9316d43f7,656c744f47b331107272a3c9316d43f2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</model>
+        <model_id>982cfc0f47b331107272a3c9316d4361</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_982cfc0f47b331107272a3c9316d4361</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>296c744f47b331107272a3c9316d43fa</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=296c744f47b331107272a3c9316d43fa"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</model>
+        <model_id>982cfc0f47b331107272a3c9316d4361</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_982cfc0f47b331107272a3c9316d4361</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:38</sys_created_on>
+        <sys_id>616c744f47b331107272a3c9316d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=616c744f47b331107272a3c9316d43f7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</model>
+        <model_id>982cfc0f47b331107272a3c9316d4361</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_982cfc0f47b331107272a3c9316d4361</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:38</sys_created_on>
+        <sys_id>656c744f47b331107272a3c9316d43f2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=656c744f47b331107272a3c9316d43f2"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=982cfc0f47b331107272a3c9316d4361"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=982cfc0f47b331107272a3c9316d4361"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=982cfc0f47b331107272a3c9316d4361^sys_idNOT IN2a41a804470c42107272a3c9316d43de,452f704347f331107272a3c9316d43b2,5300e880470c42107272a3c9316d4335,742f704347f331107272a3c9316d439f,7c2f704347f331107272a3c9316d43a9,7d6cb44f47b331107272a3c9316d4305,9dd2e4c4470c42107272a3c9316d431b,a241a804470c42107272a3c9316d43f5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <order>7</order>
+        <parent_ui_id>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:07</sys_created_on>
+        <sys_id>2a41a804470c42107272a3c9316d43de</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>6532eb01-bd32-4ef2-abe4-fc2b41f47b8f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2a41a804470c42107272a3c9316d43de"/>
+    <sys_element_mapping action="delete_multiple" query="id=2a41a804470c42107272a3c9316d43de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>2a41a804470c42107272a3c9316d43de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:14</sys_created_on>
+        <sys_id>04512c04470c42107272a3c9316d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>Finance department has approved the claim and claim status is: {{66032e43-94aa-4bee-888e-308f0df8c95c.record.status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>2a41a804470c42107272a3c9316d43de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:07</sys_created_on>
+        <sys_id>e641a804470c42107272a3c9316d43df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Finance department has approved the claim and claim status is: {{66032e43-94aa-4bee-888e-308f0df8c95c.record.status}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2a41a804470c42107272a3c9316d43de"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2a41a804470c42107272a3c9316d43de"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <order>10</order>
+        <parent_ui_id>17e79430-73dc-4cc8-b389-6cf248fc181e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>452f704347f331107272a3c9316d43b2</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>ba82da46-9238-4748-bc4d-4113af619631</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=452f704347f331107272a3c9316d43b2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>452f704347f331107272a3c9316d43b2</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>412f704347f331107272a3c9316d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>452f704347f331107272a3c9316d43b2</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>672ff04347f331107272a3c9316d4316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>452f704347f331107272a3c9316d43b2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>8d2f704347f331107272a3c9316d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <value>status=rejected</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>452f704347f331107272a3c9316d43b2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>a32ff04347f331107272a3c9316d4316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <value>status=rejected</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=452f704347f331107272a3c9316d43b2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>452f704347f331107272a3c9316d43b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>6f2ff04347f331107272a3c9316d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>452f704347f331107272a3c9316d43b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>0d2f704347f331107272a3c9316d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>452f704347f331107272a3c9316d43b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>ab2ff04347f331107272a3c9316d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>452f704347f331107272a3c9316d43b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>852f704347f331107272a3c9316d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>452f704347f331107272a3c9316d43b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>232ff04347f331107272a3c9316d4316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>452f704347f331107272a3c9316d43b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>492f704347f331107272a3c9316d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=452f704347f331107272a3c9316d43b2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=452f704347f331107272a3c9316d43b2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>log approval status by Finance Department</comment>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:47:43</sys_created_on>
+        <sys_id>5300e880470c42107272a3c9316d4335</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>a99039bd-c696-43b3-8e00-adf353d97c33</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5300e880470c42107272a3c9316d4335"/>
+    <sys_element_mapping action="delete_multiple" query="id=5300e880470c42107272a3c9316d4335"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>5300e880470c42107272a3c9316d4335</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:14</sys_created_on>
+        <sys_id>80512c04470c42107272a3c9316d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>Approval status  by Finance Department : {{a8b85309-f217-41e0-8df7-3090d886b711.approval_state}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>5300e880470c42107272a3c9316d4335</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:47:43</sys_created_on>
+        <sys_id>5b00e880470c42107272a3c9316d4336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Approval status  by Finance Department : {{a8b85309-f217-41e0-8df7-3090d886b711.approval_state}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5300e880470c42107272a3c9316d4335"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5300e880470c42107272a3c9316d4335"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>742f704347f331107272a3c9316d439f</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>a8b85309-f217-41e0-8df7-3090d886b711</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=742f704347f331107272a3c9316d439f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>742f704347f331107272a3c9316d439f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>272ff04347f331107272a3c9316d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">d2d2a9920b10030085c083eb37673aa0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>742f704347f331107272a3c9316d439f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>302f704347f331107272a3c9316d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>742f704347f331107272a3c9316d439f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>632ff04347f331107272a3c9316d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">26d2a9920b10030085c083eb37673ad9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>742f704347f331107272a3c9316d439f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>7c2f704347f331107272a3c9316d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>742f704347f331107272a3c9316d439f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>af2ff04347f331107272a3c9316d4307</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="Approval Field">1ed2a9920b10030085c083eb37673ab7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>742f704347f331107272a3c9316d439f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>b82f704347f331107272a3c9316d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <value>user_comments</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>742f704347f331107272a3c9316d439f</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 07:08:01</sys_created_on>
+        <sys_id>d581d25b47fb71107272a3c9316d4385</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:00:20</sys_updated_on>
+        <value>approver_comments</value>
+        <variable display_value="Journal Field">22d2a9920b10030085c083eb37673ac3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=742f704347f331107272a3c9316d439f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>6b2ff04347f331107272a3c9316d4307</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>ApprovesAnyG[{{static.5c3ac8bd477331107272a3c9316d430e}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>742f704347f331107272a3c9316d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyG[{{Updated_1.current.assignment_group}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>232ff04347f331107272a3c9316d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>3c2f704347f331107272a3c9316d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>a72ff04347f331107272a3c9316d4307</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 07:05:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>{"action":"none","date_type":"relative","date":"{{6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.sys_updated_on}}","duration":"10","duration_type":"days","schedule":"08fcd0830a0a0b2600079f56b1adb9ae","schedule_label":"8-5 weekdays"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>b02f704347f331107272a3c9316d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 07:08:01</sys_created_on>
+        <sys_id>dd81d25b47fb71107272a3c9316d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-23 07:08:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>e32ff04347f331107272a3c9316d4307</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 07:05:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>{{6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>fc2f704347f331107272a3c9316d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>2f2ff04347f331107272a3c9316d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>742f704347f331107272a3c9316d439f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>382f704347f331107272a3c9316d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=742f704347f331107272a3c9316d439f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=742f704347f331107272a3c9316d439f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <order>6</order>
+        <parent_ui_id>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>7c2f704347f331107272a3c9316d43a9</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>66032e43-94aa-4bee-888e-308f0df8c95c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c2f704347f331107272a3c9316d43a9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7c2f704347f331107272a3c9316d43a9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>782f704347f331107272a3c9316d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7c2f704347f331107272a3c9316d43a9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>a32ff04347f331107272a3c9316d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7c2f704347f331107272a3c9316d43a9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>b42f704347f331107272a3c9316d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <value>status=complete</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7c2f704347f331107272a3c9316d43a9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>ef2ff04347f331107272a3c9316d430f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <value>status=complete</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7c2f704347f331107272a3c9316d43a9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7c2f704347f331107272a3c9316d43a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>ab2ff04347f331107272a3c9316d430f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7c2f704347f331107272a3c9316d43a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>342f704347f331107272a3c9316d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7c2f704347f331107272a3c9316d43a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>e72ff04347f331107272a3c9316d430f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7c2f704347f331107272a3c9316d43a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>bc2f704347f331107272a3c9316d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7c2f704347f331107272a3c9316d43a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>6f2ff04347f331107272a3c9316d430f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7c2f704347f331107272a3c9316d43a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>702f704347f331107272a3c9316d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7c2f704347f331107272a3c9316d43a9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7c2f704347f331107272a3c9316d43a9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>7d6cb44f47b331107272a3c9316d4305</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>6bf5743c-e946-4f61-9fa5-99c4672dc2b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7d6cb44f47b331107272a3c9316d4305"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d6cb44f47b331107272a3c9316d4305</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>3d6cb44f47b331107272a3c9316d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <value>assignment_group={"display":"Finance Department","value":"5c3ac8bd477331107272a3c9316d430e","sys_id":"5c3ac8bd477331107272a3c9316d430e"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d6cb44f47b331107272a3c9316d4305</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>af2ff04347f331107272a3c9316d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d6cb44f47b331107272a3c9316d4305</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>eb2ff04347f331107272a3c9316d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <value>assignment_group={"display":"Finance Department","value":"5c3ac8bd477331107272a3c9316d430e","sys_id":"5c3ac8bd477331107272a3c9316d430e"}</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d6cb44f47b331107272a3c9316d4305</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>fd6cb44f47b331107272a3c9316d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7d6cb44f47b331107272a3c9316d4305"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7d6cb44f47b331107272a3c9316d4305</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>a72ff04347f331107272a3c9316d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7d6cb44f47b331107272a3c9316d4305</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>b96cb44f47b331107272a3c9316d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7d6cb44f47b331107272a3c9316d4305</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>e32ff04347f331107272a3c9316d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7d6cb44f47b331107272a3c9316d4305</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>fd6cb44f47b331107272a3c9316d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7d6cb44f47b331107272a3c9316d4305</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:47</sys_created_on>
+        <sys_id>6b2ff04347f331107272a3c9316d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7d6cb44f47b331107272a3c9316d4305</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>f56cb44f47b331107272a3c9316d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7d6cb44f47b331107272a3c9316d4305"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7d6cb44f47b331107272a3c9316d4305"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>log assignment group</comment>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:59:52</sys_created_on>
+        <sys_id>9dd2e4c4470c42107272a3c9316d431b</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>ce9ba8ad-e2bf-4e58-b61a-719e73580a0c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9dd2e4c4470c42107272a3c9316d431b"/>
+    <sys_element_mapping action="delete_multiple" query="id=9dd2e4c4470c42107272a3c9316d431b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>9dd2e4c4470c42107272a3c9316d431b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 09:54:55</sys_created_on>
+        <sys_id>a9eac10847cc42107272a3c9316d4351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 09:54:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>Claim has been assigned to {{6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.assignment_group}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>9dd2e4c4470c42107272a3c9316d431b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:59:52</sys_created_on>
+        <sys_id>95d2e4c4470c42107272a3c9316d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:59:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Claim has been assigned to {{6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.assignment_group}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9dd2e4c4470c42107272a3c9316d431b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9dd2e4c4470c42107272a3c9316d431b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <order>11</order>
+        <parent_ui_id>17e79430-73dc-4cc8-b389-6cf248fc181e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:07</sys_created_on>
+        <sys_id>a241a804470c42107272a3c9316d43f5</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>b67ee6da-bbc4-4405-8d2e-0ab5e56eaf89</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a241a804470c42107272a3c9316d43f5"/>
+    <sys_element_mapping action="delete_multiple" query="id=a241a804470c42107272a3c9316d43f5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>a241a804470c42107272a3c9316d43f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:14</sys_created_on>
+        <sys_id>4c512c04470c42107272a3c9316d4343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>Finance department has rejected the claim and claim status is : {{ba82da46-9238-4748-bc4d-4113af619631.record.status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>a241a804470c42107272a3c9316d43f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:07</sys_created_on>
+        <sys_id>6241a804470c42107272a3c9316d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Finance department has rejected the claim and claim status is : {{ba82da46-9238-4748-bc4d-4113af619631.record.status}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a241a804470c42107272a3c9316d43f5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a241a804470c42107272a3c9316d43f5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=982cfc0f47b331107272a3c9316d4361"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=982cfc0f47b331107272a3c9316d4361^sys_idNOT IN342f704347f331107272a3c9316d43ac,99d2e4c4470c42107272a3c9316d4332,d5d2e4c4470c42107272a3c9316d4329,f82f704347f331107272a3c9316d43a2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7c2f704347f331107272a3c9316d43ab</block>
+        <comment/>
+        <connected_to>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>342f704347f331107272a3c9316d43ac</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>17e79430-73dc-4cc8-b389-6cf248fc181e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=342f704347f331107272a3c9316d43ac"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=342f704347f331107272a3c9316d43ac"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=342f704347f331107272a3c9316d43ac"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d1d2e4c4470c42107272a3c9316d4332</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>17e79430-73dc-4cc8-b389-6cf248fc181e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:59:52</sys_created_on>
+        <sys_id>99d2e4c4470c42107272a3c9316d4332</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>f4337dba-33fb-4b44-b587-e44e9f1780c1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=99d2e4c4470c42107272a3c9316d4332"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=99d2e4c4470c42107272a3c9316d4332"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=99d2e4c4470c42107272a3c9316d4332"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1dd2e4c4470c42107272a3c9316d4328</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:59:52</sys_created_on>
+        <sys_id>d5d2e4c4470c42107272a3c9316d4329</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>7cc68b53-07c5-4685-8c5a-fd768cbf551d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d5d2e4c4470c42107272a3c9316d4329"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d5d2e4c4470c42107272a3c9316d4329"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d5d2e4c4470c42107272a3c9316d4329"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">342f704347f331107272a3c9316d43a2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>f82f704347f331107272a3c9316d43a2</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <ui_id>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f82f704347f331107272a3c9316d43a2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f82f704347f331107272a3c9316d43a2</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>f82f704347f331107272a3c9316d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f82f704347f331107272a3c9316d43a2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f82f704347f331107272a3c9316d43a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>782f704347f331107272a3c9316d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a8b85309-f217-41e0-8df7-3090d886b711.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>f82f704347f331107272a3c9316d43a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:36</sys_created_on>
+        <sys_id>b42f704347f331107272a3c9316d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f82f704347f331107272a3c9316d43a2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f82f704347f331107272a3c9316d43a2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=982cfc0f47b331107272a3c9316d4361"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=982cfc0f47b331107272a3c9316d4361"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_982cfc0f47b331107272a3c9316d4361^sys_idNOT IN696c744f47b331107272a3c9316d43f9,a16c744f47b331107272a3c9316d43f6,e96c744f47b331107272a3c9316d43fc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_982cfc0f47b331107272a3c9316d4361</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>696c744f47b331107272a3c9316d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_982cfc0f47b331107272a3c9316d4361</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:38</sys_created_on>
+        <sys_id>a16c744f47b331107272a3c9316d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_982cfc0f47b331107272a3c9316d4361</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:17:39</sys_created_on>
+        <sys_id>e96c744f47b331107272a3c9316d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:17:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_982cfc0f47b331107272a3c9316d4361"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_982cfc0f47b331107272a3c9316d4361"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_982cfc0f47b331107272a3c9316d4361"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>Assign Partially Approved claims to finance department</description>
+        <internal_name>assign_partially_approved_claims_to_finance_dept</internal_name>
+        <label_cache>[{"name":"{{static.5c3ac8bd477331107272a3c9316d430e}}","label":"Finance Department","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record","label":"1 - Update Record➛Reimbursement Claim Record","reference":"x_1296763_expense_reimbursement_claim","reference_display":"Reimbursement Claim","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Reimbursement Claim Record","reference":"x_1296763_expense_reimbursement_claim","reference_display":"Reimbursement Claim","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.assignment_group","label":"Trigger - Record Updated➛Reimbursement Claim Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"assignment_group"},{"name":"a8b85309-f217-41e0-8df7-3090d886b711.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.sys_updated_on","label":"1 - Update Record➛Reimbursement Claim Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"sys_updated_on"},{"name":"66032e43-94aa-4bee-888e-308f0df8c95c.record.status","label":"5 - Update Record➛Reimbursement Claim Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"status","choices":[{"label":"Draft","used":false,"image":"","rawLabel":"Draft","selected":false,"missing":false,"reference":false,"value":"draft","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Open","used":false,"image":"","rawLabel":"Open","selected":false,"missing":false,"reference":false,"value":"open","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Partially Approved","used":false,"image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"partially_approved","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Approved","used":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"approved","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Complete","used":false,"image":"","rawLabel":"Complete","selected":false,"missing":false,"reference":false,"value":"complete","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Rejected","used":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"rejected","parameters":{"name":"x_1296763_expense_reimbursement_claim"}}]},{"name":"ba82da46-9238-4748-bc4d-4113af619631.record.status","label":"8 - Update Record➛Reimbursement Claim Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"status","choices":[{"label":"Draft","used":false,"image":"","rawLabel":"Draft","selected":false,"missing":false,"reference":false,"value":"draft","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Open","used":false,"image":"","rawLabel":"Open","selected":false,"missing":false,"reference":false,"value":"open","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Partially Approved","used":false,"image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"partially_approved","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Approved","used":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"approved","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Complete","used":false,"image":"","rawLabel":"Complete","selected":false,"missing":false,"reference":false,"value":"complete","parameters":{"name":"x_1296763_expense_reimbursement_claim"}},{"label":"Rejected","used":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"rejected","parameters":{"name":"x_1296763_expense_reimbursement_claim"}}]},{"name":"6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.assignment_group","label":"1 - Update Record➛Reimbursement Claim Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1296763_expense_reimbursement_claim","column_name":"assignment_group"}]</label_cache>
+        <master>true</master>
+        <name>Assign Partially Approved claims to Finance Dept</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Assign Partially Approved claims to Finance Dept">982cfc0f47b331107272a3c9316d4361</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>732ff04347f331107272a3c9316d4362</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:42</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=732ff04347f331107272a3c9316d4362"/>
+    <sys_variable_value action="delete_multiple" query="document_key=732ff04347f331107272a3c9316d4362"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=732ff04347f331107272a3c9316d4362^sys_idNOT IN403ff04347f331107272a3c9316d43ea"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>403ff04347f331107272a3c9316d43ea</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=403ff04347f331107272a3c9316d43ea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>403ff04347f331107272a3c9316d43ea</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>8c3ff04347f331107272a3c9316d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>403ff04347f331107272a3c9316d43ea</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>c83ff04347f331107272a3c9316d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>status=partially_approved</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=403ff04347f331107272a3c9316d43ea"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=732ff04347f331107272a3c9316d4362"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=732ff04347f331107272a3c9316d4362^sys_idNOT IN372ff04347f331107272a3c9316d4363"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>732ff04347f331107272a3c9316d4362</id>
+        <name>Assign Partially Approved claims to Finance Dept</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:48</sys_created_on>
+        <sys_id>372ff04347f331107272a3c9316d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=372ff04347f331107272a3c9316d4363"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=732ff04347f331107272a3c9316d4362^sys_idNOT IN372ff04347f331107272a3c9316d43a1,3b2ff04347f331107272a3c9316d4364,f32ff04347f331107272a3c9316d4399"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</model>
+        <model_id>732ff04347f331107272a3c9316d4362</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_732ff04347f331107272a3c9316d4362</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:48</sys_created_on>
+        <sys_id>372ff04347f331107272a3c9316d43a1</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=372ff04347f331107272a3c9316d43a1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</model>
+        <model_id>732ff04347f331107272a3c9316d4362</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_732ff04347f331107272a3c9316d4362</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:48</sys_created_on>
+        <sys_id>3b2ff04347f331107272a3c9316d4364</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3b2ff04347f331107272a3c9316d4364"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</model>
+        <model_id>732ff04347f331107272a3c9316d4362</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_732ff04347f331107272a3c9316d4362</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:48</sys_created_on>
+        <sys_id>f32ff04347f331107272a3c9316d4399</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f32ff04347f331107272a3c9316d4399"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=732ff04347f331107272a3c9316d4362"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=732ff04347f331107272a3c9316d4362"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=732ff04347f331107272a3c9316d4362^sys_idNOT IN0c3ff04347f331107272a3c9316d43d5,28516c04470c42107272a3c9316d4357,403ff04347f331107272a3c9316d43e8,96ea050847cc42107272a3c9316d43ab,bc516c04470c42107272a3c9316d4363,c03ff04347f331107272a3c9316d43b9,cc3ff04347f331107272a3c9316d43ce,e8516c04470c42107272a3c9316d435d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <order>6</order>
+        <parent_ui_id>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>0c3ff04347f331107272a3c9316d43d5</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <ui_id>66032e43-94aa-4bee-888e-308f0df8c95c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0c3ff04347f331107272a3c9316d43d5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0c3ff04347f331107272a3c9316d43d5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>0c3ff04347f331107272a3c9316d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>status=complete</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0c3ff04347f331107272a3c9316d43d5</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>cc3ff04347f331107272a3c9316d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0c3ff04347f331107272a3c9316d43d5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0c3ff04347f331107272a3c9316d43d5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>c43ff04347f331107272a3c9316d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0c3ff04347f331107272a3c9316d43d5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>043ff04347f331107272a3c9316d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0c3ff04347f331107272a3c9316d43d5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>883ff04347f331107272a3c9316d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0c3ff04347f331107272a3c9316d43d5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0c3ff04347f331107272a3c9316d43d5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>log approval status by Finance Department</comment>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:16</sys_created_on>
+        <sys_id>28516c04470c42107272a3c9316d4357</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <ui_id>a99039bd-c696-43b3-8e00-adf353d97c33</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=28516c04470c42107272a3c9316d4357"/>
+    <sys_element_mapping action="delete_multiple" query="id=28516c04470c42107272a3c9316d4357"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>28516c04470c42107272a3c9316d4357</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:16</sys_created_on>
+        <sys_id>e4516c04470c42107272a3c9316d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>Approval status  by Finance Department : {{a8b85309-f217-41e0-8df7-3090d886b711.approval_state}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28516c04470c42107272a3c9316d4357"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=28516c04470c42107272a3c9316d4357"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <order>10</order>
+        <parent_ui_id>17e79430-73dc-4cc8-b389-6cf248fc181e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>403ff04347f331107272a3c9316d43e8</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:42</sys_updated_on>
+        <ui_id>ba82da46-9238-4748-bc4d-4113af619631</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=403ff04347f331107272a3c9316d43e8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>403ff04347f331107272a3c9316d43e8</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>4c3ff04347f331107272a3c9316d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>403ff04347f331107272a3c9316d43e8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>883ff04347f331107272a3c9316d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>status=rejected</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=403ff04347f331107272a3c9316d43e8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>403ff04347f331107272a3c9316d43e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>443ff04347f331107272a3c9316d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>403ff04347f331107272a3c9316d43e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>803ff04347f331107272a3c9316d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>403ff04347f331107272a3c9316d43e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>083ff04347f331107272a3c9316d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=403ff04347f331107272a3c9316d43e8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=403ff04347f331107272a3c9316d43e8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>log assignment group</comment>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 09:54:59</sys_created_on>
+        <sys_id>96ea050847cc42107272a3c9316d43ab</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <ui_id>ce9ba8ad-e2bf-4e58-b61a-719e73580a0c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=96ea050847cc42107272a3c9316d43ab"/>
+    <sys_element_mapping action="delete_multiple" query="id=96ea050847cc42107272a3c9316d43ab"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>96ea050847cc42107272a3c9316d43ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 09:54:59</sys_created_on>
+        <sys_id>5aea050847cc42107272a3c9316d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 09:54:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>Claim has been assigned to {{6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.assignment_group}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=96ea050847cc42107272a3c9316d43ab"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=96ea050847cc42107272a3c9316d43ab"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <order>11</order>
+        <parent_ui_id>17e79430-73dc-4cc8-b389-6cf248fc181e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:16</sys_created_on>
+        <sys_id>bc516c04470c42107272a3c9316d4363</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:42</sys_updated_on>
+        <ui_id>b67ee6da-bbc4-4405-8d2e-0ab5e56eaf89</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bc516c04470c42107272a3c9316d4363"/>
+    <sys_element_mapping action="delete_multiple" query="id=bc516c04470c42107272a3c9316d4363"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>bc516c04470c42107272a3c9316d4363</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:16</sys_created_on>
+        <sys_id>7c516c04470c42107272a3c9316d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>Finance department has rejected the claim and claim status is : {{ba82da46-9238-4748-bc4d-4113af619631.record.status}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bc516c04470c42107272a3c9316d4363"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bc516c04470c42107272a3c9316d4363"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>c03ff04347f331107272a3c9316d43b9</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <ui_id>6bf5743c-e946-4f61-9fa5-99c4672dc2b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c03ff04347f331107272a3c9316d43b9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c03ff04347f331107272a3c9316d43b9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>0c3ff04347f331107272a3c9316d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>assignment_group={"display":"Finance Department","value":"5c3ac8bd477331107272a3c9316d430e","sys_id":"5c3ac8bd477331107272a3c9316d430e"}</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c03ff04347f331107272a3c9316d43b9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>cc3ff04347f331107272a3c9316d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c03ff04347f331107272a3c9316d43b9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c03ff04347f331107272a3c9316d43b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>c43ff04347f331107272a3c9316d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c03ff04347f331107272a3c9316d43b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>043ff04347f331107272a3c9316d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c03ff04347f331107272a3c9316d43b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>883ff04347f331107272a3c9316d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c03ff04347f331107272a3c9316d43b9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c03ff04347f331107272a3c9316d43b9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>cc3ff04347f331107272a3c9316d43ce</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <ui_id>a8b85309-f217-41e0-8df7-3090d886b711</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cc3ff04347f331107272a3c9316d43ce"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cc3ff04347f331107272a3c9316d43ce</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>043ff04347f331107272a3c9316d43d1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:57:21</sys_updated_on>
+        <value/>
+        <variable display_value="Approval Field">1ed2a9920b10030085c083eb37673ab7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cc3ff04347f331107272a3c9316d43ce</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:16</sys_created_on>
+        <sys_id>20516c04470c42107272a3c9316d4352</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:18:05</sys_updated_on>
+        <value>approver_comments</value>
+        <variable display_value="Journal Field">22d2a9920b10030085c083eb37673ac3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cc3ff04347f331107272a3c9316d43ce</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>883ff04347f331107272a3c9316d43d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>x_1296763_expense_reimbursement_claim</value>
+        <variable display_value="Table">d2d2a9920b10030085c083eb37673aa0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cc3ff04347f331107272a3c9316d43ce</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>c43ff04347f331107272a3c9316d43d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">26d2a9920b10030085c083eb37673ad9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cc3ff04347f331107272a3c9316d43ce"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>cc3ff04347f331107272a3c9316d43ce</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>cc3ff04347f331107272a3c9316d43d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>ApprovesAnyG[{{static.5c3ac8bd477331107272a3c9316d430e}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>cc3ff04347f331107272a3c9316d43ce</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>843ff04347f331107272a3c9316d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>cc3ff04347f331107272a3c9316d43ce</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>0c3ff04347f331107272a3c9316d43d0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 09:54:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>{"action":"none","date_type":"relative","date":"{{6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record.sys_updated_on}}","duration":"10","duration_type":"days","schedule":"08fcd0830a0a0b2600079f56b1adb9ae","schedule_label":"8-5 weekdays"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>cc3ff04347f331107272a3c9316d43ce</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:16</sys_created_on>
+        <sys_id>a0516c04470c42107272a3c9316d4351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>cc3ff04347f331107272a3c9316d43ce</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>483ff04347f331107272a3c9316d43d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 09:54:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>{{6bf5743c-e946-4f61-9fa5-99c4672dc2b8.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>cc3ff04347f331107272a3c9316d43ce</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>803ff04347f331107272a3c9316d43d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cc3ff04347f331107272a3c9316d43ce"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cc3ff04347f331107272a3c9316d43ce"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <order>7</order>
+        <parent_ui_id>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:16</sys_created_on>
+        <sys_id>e8516c04470c42107272a3c9316d435d</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <ui_id>6532eb01-bd32-4ef2-abe4-fc2b41f47b8f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e8516c04470c42107272a3c9316d435d"/>
+    <sys_element_mapping action="delete_multiple" query="id=e8516c04470c42107272a3c9316d435d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>e8516c04470c42107272a3c9316d435d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 06:53:16</sys_created_on>
+        <sys_id>a8516c04470c42107272a3c9316d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 06:53:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>Finance department has approved the claim and claim status is: {{66032e43-94aa-4bee-888e-308f0df8c95c.record.status}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e8516c04470c42107272a3c9316d435d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8516c04470c42107272a3c9316d435d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=732ff04347f331107272a3c9316d4362"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=732ff04347f331107272a3c9316d4362^sys_idNOT IN22ea050847cc42107272a3c9316d43c6,2aea050847cc42107272a3c9316d43be,332ff04347f331107272a3c9316d43b1,3f2ff04347f331107272a3c9316d43ac"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d1d2e4c4470c42107272a3c9316d4332</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>17e79430-73dc-4cc8-b389-6cf248fc181e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 09:54:59</sys_created_on>
+        <sys_id>22ea050847cc42107272a3c9316d43c6</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:42</sys_updated_on>
+        <ui_id>f4337dba-33fb-4b44-b587-e44e9f1780c1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=22ea050847cc42107272a3c9316d43c6"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=22ea050847cc42107272a3c9316d43c6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=22ea050847cc42107272a3c9316d43c6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1dd2e4c4470c42107272a3c9316d4328</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-25 09:54:59</sys_created_on>
+        <sys_id>2aea050847cc42107272a3c9316d43be</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <ui_id>7cc68b53-07c5-4685-8c5a-fd768cbf551d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2aea050847cc42107272a3c9316d43be"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2aea050847cc42107272a3c9316d43be"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2aea050847cc42107272a3c9316d43be"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7c2f704347f331107272a3c9316d43ab</block>
+        <comment/>
+        <connected_to>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>332ff04347f331107272a3c9316d43b1</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:42</sys_updated_on>
+        <ui_id>17e79430-73dc-4cc8-b389-6cf248fc181e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=332ff04347f331107272a3c9316d43b1"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=332ff04347f331107272a3c9316d43b1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=332ff04347f331107272a3c9316d43b1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">342f704347f331107272a3c9316d43a2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Assign Partially Approved claims to Finance Dept">732ff04347f331107272a3c9316d4362</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>3f2ff04347f331107272a3c9316d43ac</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:41</sys_updated_on>
+        <ui_id>e7c6f89f-0dbe-434f-9e5f-fd837726fb49</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3f2ff04347f331107272a3c9316d43ac"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3f2ff04347f331107272a3c9316d43ac</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>372ff04347f331107272a3c9316d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3f2ff04347f331107272a3c9316d43ac"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3f2ff04347f331107272a3c9316d43ac</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>b32ff04347f331107272a3c9316d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a8b85309-f217-41e0-8df7-3090d886b711.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>3f2ff04347f331107272a3c9316d43ac</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>ff2ff04347f331107272a3c9316d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3f2ff04347f331107272a3c9316d43ac"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3f2ff04347f331107272a3c9316d43ac"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=732ff04347f331107272a3c9316d4362"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=732ff04347f331107272a3c9316d4362"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_732ff04347f331107272a3c9316d4362^sys_idNOT IN7b2ff04347f331107272a3c9316d43a5,bb2ff04347f331107272a3c9316d4395,fb2ff04347f331107272a3c9316d439d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_732ff04347f331107272a3c9316d4362</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_id>7b2ff04347f331107272a3c9316d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_732ff04347f331107272a3c9316d4362</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:48</sys_created_on>
+        <sys_id>bb2ff04347f331107272a3c9316d4395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_732ff04347f331107272a3c9316d4362</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:48</sys_created_on>
+        <sys_id>fb2ff04347f331107272a3c9316d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-22 06:29:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_732ff04347f331107272a3c9316d4362"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_732ff04347f331107272a3c9316d4362"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_732ff04347f331107272a3c9316d4362"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>982cfc0f47b331107272a3c9316d4361</sys_id>
+        <latest_snapshot>732ff04347f331107272a3c9316d4362</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=982cfc0f47b331107272a3c9316d4361^sys_idNOT IN403f344347f331107272a3c9316d430d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"403f344347f331107272a3c9316d430d","name":"plan","plan_signature":null}}</plan>
+        <plan_id>982cfc0f47b331107272a3c9316d4361</plan_id>
+        <snapshot>f31a1d0c470082107272a3c9316d436c</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-22 06:29:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>403f344347f331107272a3c9316d430d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-25 10:49:43</sys_updated_on>
+        <trigger display_value="">003f344347f331107272a3c9316d430b</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=982cfc0f47b331107272a3c9316d4361"/>
+</record_update>

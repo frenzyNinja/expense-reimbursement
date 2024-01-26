@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="04e95a3047ff71107272a3c9316d4397" label="Reimbursement Expense" max_length="40" name="x_1296763_expense_reimbursement_expense" type="collection">
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" default="0" label="Amount" max_length="20" name="amount" type="decimal"/>
+        <element dependent="claim.report_name" dependent_on_field="claim.report_name" label="Claim" max_length="32" name="claim" read_only="true" reference="x_1296763_expense_reimbursement_claim" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Comment" max_length="500" name="comment" type="string"/>
+        <element choice="3" default="inr" label="Currency" max_length="40" name="currency" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="INR" sequence="0" value="inr"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Expense Type" mandatory="true" max_length="32" name="expense_type" reference="x_1296763_expense_expense_type" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" dependent="payment_type.name" dependent_on_field="payment_type.name" label="Payment Type" mandatory="true" max_length="32" name="payment_type" reference="x_1296763_expense_payment_type" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Receipt" max_length="1024" name="receipt" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="no_receipt" label="Receipt Status" mandatory="true" max_length="40" name="receipt_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No Receipt" sequence="0" value="no_receipt"/>
+                <element inactive_on_update="false" label="Receipt" sequence="1" value="receipt"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Transaction Date" max_length="40" name="transaction_date" type="glide_date"/>
+        <element label="File" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Name" mandatory="true" max_length="125" name="vendor_name" type="string"/>
+        <index name="index">
+            <element name="claim"/>
+        </index>
+    </element>
+</database>

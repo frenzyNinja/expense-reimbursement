@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">479ceb344777b1107272a3c9316d43fb</sp_column>
+        <sp_widget display_value="Ticket Conversations">85357f52cb30020000f8d856634c9c24</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 05:46:47</sys_created_on>
+        <sys_id>5fcbb94547ffb1107272a3c9316d4347</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sp_instance_5fcbb94547ffb1107272a3c9316d4347</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-16 05:47:16</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"use_dynamic_placeholder": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"no_readable_journal_field_message": {
+		"value": "",
+		"displayValue": ""
+	},
+	"enter_key_behavior": {
+		"value": "Submit",
+		"displayValue": "Submit"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=5fcbb94547ffb1107272a3c9316d4347"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</application>
+        <file_path/>
+        <instance_id>8ee68991dbaab998ae4c9027c5961965</instance_id>
+        <instance_name>dev212449</instance_name>
+        <name>sp_instance_5fcbb94547ffb1107272a3c9316d4347</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;479ceb344777b1107272a3c9316d43fb&lt;/sp_column&gt;&lt;sp_widget display_value="Ticket Conversations"&gt;85357f52cb30020000f8d856634c9c24&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-16 05:46:47&lt;/sys_created_on&gt;&lt;sys_id&gt;5fcbb94547ffb1107272a3c9316d4347&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Expense Reimbursement" source="x_1296763_expense"&gt;14e41ab847bf71107272a3c9316d437a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Expense Reimbursement"&gt;14e41ab847bf71107272a3c9316d437a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_5fcbb94547ffb1107272a3c9316d4347&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-16 05:47:16&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"use_dynamic_placeholder": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"no_readable_journal_field_message": {
+		"value": "",
+		"displayValue": ""
+	},
+	"enter_key_behavior": {
+		"value": "Submit",
+		"displayValue": "Submit"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5fcbb94547ffb1107272a3c9316d4347"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>208180665</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5ce41ab847bf71107272a3c9316d437c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 05:47:16</sys_created_on>
+        <sys_id>daeb3d0547ffb1107272a3c9316d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d10cf4a670000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-16 05:47:16</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>d2eb3d0520ffb11023a16526d7a493f7</update_guid>
+        <update_guid_history>d2eb3d0520ffb11023a16526d7a493f7:208180665,9bcb7985b4ffb110dd0c92e5aa9f48bc:-2023218881</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">bbeb3d8547ffb1107272a3c9316d4320</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-16 05:47:23</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>068dccb861124b60803603957f733690</sys_id>
+        <sys_metadata>5fcbb94547ffb1107272a3c9316d4347</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_scope_delete display_value="">4780955852644306993acdebcda7e429</sys_scope_delete>
+        <sys_update_name>sp_instance_5fcbb94547ffb1107272a3c9316d4347</sys_update_name>
+        <sys_update_version display_value="sp_instance_5fcbb94547ffb1107272a3c9316d4347">daeb3d0547ffb1107272a3c9316d43f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-16 05:47:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

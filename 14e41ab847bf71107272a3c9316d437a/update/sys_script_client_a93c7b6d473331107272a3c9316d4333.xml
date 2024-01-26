@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Disable expense fields when claim has been submitted</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>Disable fields when claim.status is OPEN</messages>
+        <name>Disable expns field when claim submitted</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    var expenseID = g_form.getValue('number');
+
+    var request = new GlideAjax('GetClaimDetails');
+    request.addParam('sysparm_name', 'getStatus');
+    request.addParam('sysparm_expense_id', expenseID);
+    request.getXML(onResponse);
+
+    function onResponse(response) {
+        var status = response.responseXML.documentElement.getAttribute('answer');
+		g_form.addInfoMessage(status);
+		if (status && status !== 'draft') {
+			g_form.addInfoMessage(status);
+			disableFields();
+		}
+    }
+
+    function disableFields() {
+        var fieldsToDisable = [
+            'vendor_name',
+            'expense_type',
+            'amount',
+            'transaction_date',
+            'comment',
+            'receipt_status',
+			'payment_type',
+			'claim',
+        ];
+
+        fieldsToDisable.forEach(function(field) {
+            g_form.setDisabled(field, true);
+        });
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-18 04:39:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a93c7b6d473331107272a3c9316d4333</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Disable expns field when claim submitted</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Reimbursement" source="x_1296763_expense">14e41ab847bf71107272a3c9316d437a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Reimbursement">14e41ab847bf71107272a3c9316d437a</sys_scope>
+        <sys_update_name>sys_script_client_a93c7b6d473331107272a3c9316d4333</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-23 05:02:05</sys_updated_on>
+        <table>x_1296763_expense_reimbursement_expense</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
